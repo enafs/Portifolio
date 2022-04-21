@@ -25,6 +25,15 @@ html {
 // @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
 body {
   line-height: 1.5;
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "main      main   main"
+  "footer footer footer";
+  grid-template-columns: 1fr $global-max-width 1fr;
+  grid-row-gap: $global-module-size;
+  grid-template-columns: 1fr $global-max-width 1fr;
+  grid-row-gap: $global-module-size;
 }
 
 // @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/

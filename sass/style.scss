@@ -10,6 +10,10 @@
 @import "abstract/z-index";
 
 :root {
+  @each $name, $color in $colors-theme {
+    --color-#{$name}: #{$color};
+  }
+
   @each $name, $color in $webfatorial-colors {
     --color-#{$name}: #{$color};
   }
@@ -42,12 +46,16 @@
 // ==========================================================================
 
 // @import "layout/l-";
+@import "layout/l-header";
+@import "layout/l-main";
+@import "layout/l-footer";
 
 // ==========================================================================
 // Component
 // ==========================================================================
 
 // @import "component/c-";
+@import "component/c-menu";
 
 // ==========================================================================
 // State

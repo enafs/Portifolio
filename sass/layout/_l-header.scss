@@ -1,0 +1,16 @@
+.l-header {
+  background: var(--color-dark);
+  color: var(--color-white);
+  display: grid;
+  grid-area: header;
+  grid-template-columns: $global-max-width;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .logo-style {
+        width: 300px;
+        padding: 20px 0;
+  }
+}

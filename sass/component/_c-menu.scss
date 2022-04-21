@@ -1,0 +1,32 @@
+.c-menu-header {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+    padding-top: 15px;
+
+    li {
+      list-style: none;
+      border-right: 1px solid var(--color-red);
+      padding-right: 10px;
+
+      &:last-child {
+        border: none;
+        padding-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--color-white);
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.4);
+          color: rebeccapurple;
+        }
+
+      }
+    }
+  }
+}
